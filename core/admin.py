@@ -7,6 +7,6 @@ from .models import Livros
 # Register your models here.
 
 class LivrosAdmin(admin.ModelAdmin):
-    list_display = ('title', 'created_date')
+    list_display = ('title', 'rating')
 
 admin.site.register(Livros, LivrosAdmin)

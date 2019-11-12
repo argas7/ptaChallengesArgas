@@ -6,8 +6,8 @@ from django.db import models
 # Create your models here.
 class Livros(models.Model):
     title = models.CharField('Título', max_length=50)
-    created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
-    
+    rating = models.IntegerField()
+
     class Meta:
         ordering = ['title']
         verbose_name = 'Livro'

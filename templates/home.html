@@ -25,9 +25,11 @@
         </div>
         <div class="page">
             <h3>Últimos livros lidos:</h3>
-            <ol>
                 {% for livro in livros %}
-                <p>{{ livro.title }} - {{ livro.rating }}</p>
+                <div class="book">
+                    <p>Título: <span class="name"> {{ livro.title }} </span></p>
+                    <p>Rating: <span class="name">{{ livro.rating }}</span></p>
+                </div>
                 {% endfor %}
                 <!--
                 <a href="https://pt.wikipedia.org/wiki/The_Last_Olympian" target="_blank"><li>Percy Jackson - O Último Olimpiano</li></a>
@@ -36,7 +38,7 @@
                 <a href="https://pt.wikipedia.org/wiki/The_Sea_of_Monsters" target="_blank"><li>Percy Jackson - O Mar de Monstros</li></a>
                 <a href="https://pt.wikipedia.org/wiki/The_Lightning_Thief" target="_blank"><li>Percy Jackson - O Ladrão de Raios</li></a>
                 -->
-            </ol>
+    
         </div>
     </div>    
 </body>
